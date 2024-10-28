@@ -1,0 +1,174 @@
+body {
+  background-color: #160334; 
+  margin: 0;
+  padding: 0; 
+}
+
+.wallpaper {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; 
+}
+
+.content {
+  position: relative; 
+  z-index: 2; 
+  text-align: center; 
+  margin: 20px 0; 
+}
+
+.overlay-image {
+  max-width: 100%; 
+  height: auto; 
+}
+
+.title {
+  font-size: 30px; 
+  color: white; 
+  margin: 8px 0; 
+}
+
+.subtitle {
+  font-size: 18px; 
+  color: white; 
+  margin: 5px 0; 
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  margin: 20px auto; 
+  padding: 20px; 
+  max-width: 1000px; 
+  background-color: rgb(255, 255, 255); 
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  position: relative; 
+  z-index: 2; 
+}
+
+.form {
+  background-color: transparent; 
+  padding: 10px; 
+  border-radius: 10px; 
+  width: 100%; 
+}
+
+.form-section {
+  margin-bottom: 15px; 
+  padding: 10px; 
+  border: 1px solid rgba(255, 255, 255, 0.2); 
+  border-radius: 5px; 
+  background-color: rgba(255, 255, 255, 0.966); 
+}
+
+.section-title {
+  font-weight: bold;
+  margin: 5px 0;
+  text-align: left; 
+  position: relative; 
+  color: rgba(0, 0, 0, 0.8); 
+}
+
+.section-title::after {
+  content: ""; 
+  display: block; 
+  height: 2px; 
+  background-color: rgba(200, 200, 200, 0.5);
+  margin-top: 5px; 
+  width: 100%; 
+  position: absolute;
+  bottom: -5px; 
+  left: 0; 
+}
+
+.form-group label {
+  color: gray; /* Cambiado a gris */
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  color: #333; 
+  margin-bottom: 10px; 
+}
+
+label {
+  display: block;
+  margin-bottom: 5px; 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea,
+select {
+  width: calc(100% - 20px); 
+  padding: 10px; 
+  border: 2px solid rgba(255, 255, 255, 0.5); 
+  border-radius: 20px; 
+  background-color: rgba(230, 230, 230, 0.9); /* Gris claro suave */
+  transition: border-color 0.3s; 
+}
+
+textarea {
+  height: 200px; 
+}
+
+/* Cambiar el color del borde al enfocar */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+  border-color: rgba(150, 150, 150, 0.8); 
+}
+
+/* Cambiar el color del texto en select y opciones */
+select {
+  color: gray; 
+}
+
+select option {
+  color: gray; 
+}
+
+select option:disabled {
+  color: lightgray; 
+}
+
+/* Borde en hover */
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover,
+input[type="date"]:hover,
+textarea:hover,
+select:hover {
+  border-color: rgba(200, 200, 200, 0.7); 
+}
+
+.submit-button {
+  background: linear-gradient(135deg, #7A1E7D, #B55CC5); /* Degradado morado */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 20px; /* Esquinas redondeadas */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+  font-size: 16px; /* Tamaño de fuente */
+  transition: background 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+.submit-button:hover {
+  transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+  background: linear-gradient(135deg, #B55CC5, #7A1E7D); /* Invertir el degradado al pasar el mouse */
+}
+
+.submit-button:active {
+  transform: scale(0.95); /* Efecto al hacer clic */
+}
